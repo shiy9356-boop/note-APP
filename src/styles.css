@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  background-color: #0a0f1c;
+  color: #e0e6ed;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Monaco Editor 样式覆盖 */
+.monaco-editor {
+  height: 100% !important;
+}
+
+.monaco-editor .view-lines {
+  font-family: 'Fira Code', 'Consolas', monospace;
+}
+
+.monaco-editor .margin {
+  background-color: #1a1f35 !important;
+}
+
+.monaco-editor .line-numbers {
+  color: #6b7a8f !important;
+}
